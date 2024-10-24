@@ -1,0 +1,193 @@
+.header {
+  background-color: var(--main-bg-color);
+  color: var(--main-color);
+  display: flex;
+  /* height: 680px; */
+  height: 790px;
+  position: relative;
+}
+.rightSide {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  right: 0;
+  width: 35%;
+  height: inherit;
+}
+.rightSide img {
+  height: 100%;
+}
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+.leftSideImg {
+  position: absolute;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  width: 25%;
+  height: 220px;
+}
+
+.leftSideImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.leftSideImg div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  right: 0;
+  top: 0;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.telephone {
+  left: 26%;
+  padding-bottom: 10px;
+  font-size: 18px;
+  position: absolute;
+  bottom: 0;
+}
+
+.leftSideText {
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  padding-left: 100px;
+}
+.leftSideText span {
+  font-size: 28px;
+  font-weight: 500;
+  max-width: 200px;
+  margin-right: 250px;
+  padding-top: 10px;
+  text-transform: uppercase;
+}
+.leftSide h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 70px;
+  margin: 0;
+}
+.leftSide p {
+  max-width: 500px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.leftSide button {
+  background-color: var(--button-color);
+  border: none;
+  color: var(--main-color);
+  padding: 18px 50px;
+  border-radius: 50px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.divider {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+
+  width: 60%;
+  height: 100%;
+}
+.divider img {
+  height: 400px;
+  width: 550px;
+}
+/* Small phones */
+@media only screen and (max-width: 600px) {
+  .header {
+    width: 100%;
+    height: 640px;
+  }
+  .divider img {
+    height: 250px;
+    width: 270px;
+    margin-top: 70px;
+    overflow: hidden;
+  }
+  .leftSideText {
+    padding-left: 0;
+  }
+  .leftSideText span {
+    margin-right: 10px;
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  .leftSide h1 {
+    font-size: 40px;
+    padding-left: 10px;
+  }
+  .leftSide p {
+    max-width: 200px;
+    font-size: 15px;
+    padding-left: 10px;
+  }
+  .leftSide button {
+    padding: 8px 15px;
+    font-weight: 800;
+    margin-left: 10px;
+  }
+  .telephone {
+    left: 26%;
+    padding-bottom: 10px;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+/* Medium phones */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .divider img {
+    height: 300px;
+    width: 350px;
+  }
+}
+/* Tablets */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .divider img {
+    height: 350px;
+    width: 360px;
+  }
+}
+
+/* Small laptops */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  .divider img {
+    height: 300px;
+    width: 450px;
+    overflow: hidden;
+  }
+}
+
+/* Desktops */
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+  .divider img {
+    height: 250px;
+    width: 390px;
+    overflow: hidden;
+  }
+}
+/* Large desktops */
+/* @media only screen and (min-width: 1441px) {
+  .divider img {
+    height: 250px;
+    width: 390px;
+    overflow: hidden;
+  }
+} */
