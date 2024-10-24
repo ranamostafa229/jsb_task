@@ -1,0 +1,265 @@
+.section {
+  background-color: var(--main-bg-color);
+  color: var(--main-color);
+  display: flex;
+  height: 790px;
+  position: relative;
+}
+.rightSide {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  right: 0;
+  width: 35%;
+  height: inherit;
+}
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  height: 90%;
+  align-items: center;
+  gap: 40px;
+  z-index: 10;
+  padding-top: 40px;
+}
+
+.leftSide h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 144px;
+  margin: 0;
+  width: 50%;
+  height: fit-content;
+  line-height: 120px;
+}
+.leftSide p {
+  max-width: 500px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.leftSide button {
+  background-color: var(--button-color);
+  border: none;
+  color: var(--main-color);
+  padding: 18px 50px;
+  border-radius: 50px;
+  font-weight: 800;
+  cursor: pointer;
+  box-sizing: border-box;
+  align-self: normal;
+  margin-left: 140px;
+}
+.divider {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+
+  width: 50%;
+  height: 100%;
+}
+.divider img {
+  height: 700px;
+  width: 550px;
+}
+/* Extra Small phones */
+@media only screen and (max-width: 360px) {
+  .section {
+    width: 100%;
+    height: 700px;
+  }
+  .divider img {
+    height: 380px;
+    width: 150px;
+    margin-bottom: 100px;
+  }
+
+  .leftSide {
+    gap: 10px;
+  }
+  .leftSide h1 {
+    font-size: 50px;
+    line-height: 50px;
+    width: 80%;
+  }
+  .leftSide p {
+    max-width: 200px;
+    font-size: 14px;
+    /* padding-right: 40px; */
+  }
+  .leftSide button {
+    padding: 8px 15px;
+    font-weight: 800;
+    align-self: normal;
+    margin: 0;
+  }
+}
+/* Small phones */
+@media only screen and (min-width: 361px) and (max-width: 600px) {
+  .section {
+    width: 100%;
+    height: 700px;
+  }
+  .divider img {
+    height: 350px;
+    width: 190px;
+    margin-bottom: 100px;
+  }
+
+  .leftSide {
+    gap: 10px;
+  }
+  .leftSide h1 {
+    font-size: 50px;
+    line-height: 50px;
+    width: 80%;
+  }
+  .leftSide p {
+    max-width: 170px;
+    font-size: 14px;
+    padding-right: 40px;
+  }
+  .leftSide button {
+    padding: 8px 15px;
+    font-weight: 800;
+    align-self: normal;
+    margin: 0;
+  }
+}
+
+/* Medium phones */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .section {
+    width: 100%;
+    height: 600px;
+  }
+  .divider img {
+    height: 380px;
+    width: 300px;
+    margin-bottom: 100px;
+  }
+
+  .leftSide {
+    gap: 10px;
+  }
+  .leftSide h1 {
+    font-size: 50px;
+    line-height: 50px;
+    width: 80%;
+  }
+  .leftSide p {
+    max-width: 340px;
+    font-size: 14px;
+    padding-right: 40px;
+  }
+  .leftSide button {
+    padding: 8px 15px;
+    font-weight: 800;
+    align-self: normal;
+    margin: 0;
+  }
+}
+/* Tablets */
+@media only screen and (min-width: 769px) and (max-width: 1000px) {
+  .section {
+    width: 100%;
+    height: 600px;
+  }
+  .divider img {
+    height: 380px;
+    width: 300px;
+    margin-bottom: 100px;
+  }
+
+  .leftSide {
+    gap: 10px;
+  }
+  .leftSide h1 {
+    font-size: 50px;
+    line-height: 50px;
+    width: 80%;
+  }
+  .leftSide p {
+    max-width: 380px;
+    font-size: 14px;
+    padding-right: 60px;
+  }
+  .leftSide button {
+    padding: 8px 15px;
+    font-weight: 800;
+    align-self: normal;
+    margin: 0;
+  }
+}
+
+/* Small laptops */
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .section {
+    width: 100%;
+    height: 700px;
+  }
+  .divider img {
+    height: 450px;
+    width: 340px;
+    margin-bottom: 100px;
+  }
+
+  .leftSide {
+    gap: 10px;
+  }
+  .leftSide h1 {
+    font-size: 50px;
+    line-height: 50px;
+    width: 80%;
+  }
+  .leftSide p {
+    max-width: 480px;
+    font-size: 16px;
+    padding-right: 40px;
+  }
+  .leftSide button {
+    padding: 8px 15px;
+    font-weight: 800;
+    align-self: normal;
+    margin: 0;
+  }
+}
+
+/* Desktops */
+@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+  .section {
+    width: 100%;
+    height: 700px;
+  }
+  .divider img {
+    height: 450px;
+    width: 390px;
+    margin-bottom: 100px;
+  }
+
+  .leftSide {
+    gap: 10px;
+  }
+  .leftSide h1 {
+    font-size: 50px;
+    line-height: 50px;
+    width: 80%;
+  }
+  .leftSide p {
+    max-width: 600px;
+    font-size: 18px;
+    padding-right: 40px;
+  }
+  .leftSide button {
+    padding: 8px 15px;
+    font-weight: 800;
+    align-self: normal;
+    margin: 0;
+    max-width: 1000px;
+  }
+}

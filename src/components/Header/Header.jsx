@@ -9,7 +9,7 @@ import BreadImg from "../../assets/bread.png";
 
 const Header = () => {
   return (
-    <header className={styles.header}>
+    <section className={styles.section}>
       {/* ******************* Left side ***************** */}
       <div className={styles.leftSide}>
         <div className={styles.leftSideText}>
@@ -50,7 +50,7 @@ const Header = () => {
       <div className={styles.divider}>
         <img src={BreadImg} alt="bread-image" />
       </div>
-    </header>
+    </section>
   );
 };
 

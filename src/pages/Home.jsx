@@ -1,3 +1,4 @@
+import AboutUs from "../components/AboutUs/AboutUs";
 import ContactUs from "../components/ContactUs/ContactUs";
 import Footer from "../components/Footer";
 import Header from "../components/Header/Header";
@@ -8,6 +9,7 @@ const Home = () => {
     <div>
       <Header />
       <WorkSection />
+      <AboutUs />
       <ContactUs />
       <Footer />
     </div>
