@@ -39,6 +39,15 @@
   width: 380px;
   font-size: 14px;
 }
+.section button {
+  background-color: var(--button-color);
+  border: none;
+  color: var(--main-color);
+  padding: 18px 50px;
+  border-radius: 50px;
+  font-weight: 800;
+  cursor: pointer;
+}
 @media only screen and (max-width: 600px) {
   .section h1 {
     font-size: 50px;
