@@ -36,7 +36,14 @@ const WorkSection = () => {
             />
           ))}
         </div>
-        <button>CONTACT US</button>
+        <button>
+          <a
+            style={{ textDecoration: "none", color: "inherit" }}
+            href="#contact"
+          >
+            CONTACT US{" "}
+          </a>
+        </button>
       </div>
     </section>
   );

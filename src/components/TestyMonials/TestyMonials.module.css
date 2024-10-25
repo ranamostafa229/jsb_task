@@ -43,6 +43,15 @@
   font-weight: 500;
   color: gray;
 }
+.section button {
+  background-color: var(--button-color);
+  border: none;
+  color: var(--main-color);
+  padding: 18px 50px;
+  border-radius: 50px;
+  font-weight: 800;
+  cursor: pointer;
+}
 /* Small phones */
 @media only screen and (max-width: 600px) {
   .container {
@@ -53,6 +62,9 @@
   }
   .section h1 {
     font-size: 40px;
+  }
+  .section button {
+    padding: 15px 50px;
   }
 }
 /* Small tablets */

@@ -24,7 +24,14 @@ const AboutUs = () => {
             width: "80%",
           }}
         >
-          <button>SEE MORE</button>
+          <button>
+            <a
+              style={{ textDecoration: "none", color: "inherit" }}
+              href="#contact"
+            >
+              SEE MORE
+            </a>
+          </button>
         </div>
       </div>
 

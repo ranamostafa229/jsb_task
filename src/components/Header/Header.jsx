@@ -6,7 +6,6 @@ import instIcon from "../../assets/instagram-icon.png";
 import fbIcon from "../../assets/facebook-icon.png";
 import twIcon from "../../assets/twitter-icon.png";
 import BreadImg from "../../assets/bread.png";
-import Button from "../Button/Button";
 
 const Header = () => {
   return (
@@ -23,7 +22,6 @@ const Header = () => {
               ever since the
             </p>
             <button>SEE MORE</button>
-            {/* <Button title="SEE MORE" /> */}
           </div>
         </div>
         {/* ****************** Left side image **************** */}
@@ -50,6 +48,7 @@ const Header = () => {
       {/*  ******************* Image Divider **************** */}
 
       <div className={styles.divider}>
+        <div className={styles.blurbackground}></div>
         <img src={BreadImg} alt="bread-image" />
       </div>
     </section>

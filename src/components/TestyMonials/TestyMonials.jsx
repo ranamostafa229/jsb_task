@@ -42,20 +42,13 @@ const TestyMonials = () => {
           </div>
         ))}
       </div>
+      <button>
+        <a style={{ textDecoration: "none", color: "inherit" }} href="#contact">
+          CONTACT US
+        </a>
+      </button>
     </section>
   );
 };
 
-// {Array.from(Array(3)).map((item, index) => (
-//     <div className={styles.card} key={index}>
-//       <img src={StarImg} alt="" />
-//       <span>Kathryn Murphy</span>
-//       <p>
-//         Lorem Ipsum is simply dummy text of the printing and typesetting
-//         industry. Lorem Ipsum has been the industry's standard dummy text
-//         ever since the 1500s, when an unknown printer took a galley of
-//         type and scrambled
-//       </p>
-//     </div>
-//   ))}
 export default TestyMonials;

@@ -2,7 +2,6 @@
   background-color: var(--main-bg-color);
   color: var(--main-color);
   display: flex;
-  /* height: 680px; */
   height: 790px;
   position: relative;
 }
@@ -107,6 +106,19 @@
 .divider img {
   height: 400px;
   width: 550px;
+  z-index: 10;
+}
+
+.blurbackground {
+  position: absolute;
+  top: 10;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  background-color: #e4a65c;
+  filter: blur(55px);
+  z-index: -1;
 }
 /* Small phones */
 @media only screen and (max-width: 600px) {
@@ -183,11 +195,3 @@
     overflow: hidden;
   }
 }
-/* Large desktops */
-/* @media only screen and (min-width: 1441px) {
-  .divider img {
-    height: 250px;
-    width: 390px;
-    overflow: hidden;
-  }
-} */

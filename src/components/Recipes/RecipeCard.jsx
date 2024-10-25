@@ -3,7 +3,7 @@ import styles from "./Recipes.module.css";
 const RecipeCard = ({ meal }) => {
   return (
     <div className={styles.card} key={meal.idMeal}>
-      <img src={meal.strMealThumb} alt="" />
+      <img src={meal.strMealThumb} alt="meal" />
       <div
         style={{
           display: "flex",
