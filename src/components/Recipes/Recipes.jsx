@@ -3,7 +3,7 @@ import RecipeCard from "./RecipeCard";
 import styles from "./Recipes.module.css";
 const Recipes = () => {
   const { data } = useFetch(
-    "https://www.themealdb.com/api/json/v1/1/filter.php?c=Breakfast&limit=3"
+    "https://www.themealdb.com/api/json/v1/1/filter.php?c=Breakfast"
   );
   return (
     <section className={styles.section}>

@@ -1,0 +1,81 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  background-color: var(--main-bg-color);
+  color: var(--main-color);
+  padding-bottom: 20px;
+}
+.section h1 {
+  font-size: 144px;
+  font-weight: 900;
+  margin: 0;
+  padding-top: 40px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  width: 500px;
+  height: 190px;
+  padding: 10px;
+  padding-left: 20px;
+}
+.card img {
+  width: 20px;
+  height: 20px;
+}
+.card span {
+  font-size: 20px;
+  font-weight: 900;
+  color: #c98a40;
+}
+.card p {
+  font-size: 16px;
+  font-weight: 500;
+  color: gray;
+}
+/* Small phones */
+@media only screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card {
+    width: 300px;
+  }
+  .section h1 {
+    font-size: 40px;
+  }
+}
+/* Small tablets */
+@media only screen and (min-width: 768px) and (max-width: 912px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    width: 330px;
+  }
+  .section h1 {
+    font-size: 90px;
+  }
+}
+/* Small laptops */
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    width: 400px;
+  }
+  .section h1 {
+    font-size: 120px;
+  }
+}

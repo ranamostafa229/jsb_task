@@ -59,4 +59,7 @@
   .container {
     gap: 30px;
   }
+  .card {
+    width: 100px;
+  }
 }
