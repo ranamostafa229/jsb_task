@@ -1,6 +1,6 @@
 import styles from "./TestyMonials.module.css";
 import StarImg from "../../assets/star.png";
-
+import BgImg from "../../assets/bg-img.png";
 const cardItem = [
   {
     name: "Kathryn Murphy",
@@ -26,6 +26,9 @@ const cardItem = [
 const TestyMonials = () => {
   return (
     <section className={styles.section}>
+      <div className={styles.img}>
+        <img src={BgImg} alt="background" />
+      </div>
       <h1>TESTYMONIALS</h1>
       <div className={styles.container}>
         {cardItem.map((item, index) => (
